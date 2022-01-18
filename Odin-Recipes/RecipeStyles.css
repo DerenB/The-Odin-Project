@@ -1,8 +1,42 @@
-h1 {
-    color: green;
+* {
+    background-color: #f9d1d1;
+    font-family: 'Playfair Display', serif;
+}
 
+h1 {
+    color: #165baa;
+    font-size: 40px;
+    margin-left: 5%;
+}
+
+.headingLink {
+    color: #0b1354;
+    text-decoration: none;
+}
+
+.listHeading {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 35px;
+}
+
+.listLink {
+    font-size: 30px;
+}
+
+.listItem {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
 .TopImage {
     width: 500px;
+    margin-left: 5%;
+}
+
+#description {
+    margin-left: 5%;
+    font-size: 20px;
 }
