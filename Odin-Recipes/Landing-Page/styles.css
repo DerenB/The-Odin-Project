@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    
+    font-family: 'VT323', monospace;
 }
 
 .header-block {
@@ -16,17 +16,34 @@
 
 #logo {
     padding-right: 300px;
+    font-size: 70px;
 }
 
 .header-link-block {
     display: flex;
     flex-direction: row;
     background-color: aqua;
-    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+
+.header-link-block a {
+    text-decoration: none;
+    height: 100%;
+    width: 130px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-link-block a:hover {
+    background-color: white;
+    color: red;
 }
 
 .header-link-item {
-    padding-left: 25px;
+    font-size: 40px;
 }
 
 .main-block {
@@ -53,4 +70,30 @@
 
 #sombra {
     width: 400px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info-abilities {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
