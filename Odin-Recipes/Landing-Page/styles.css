@@ -205,6 +205,16 @@
     color: #3E25CE;
 }
 
+#button-bottom {
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #3E25CE;
+    color: #FF5EFF;
+    border: 1px solid black;
+}
+
 .footer {
     background-color: #FF5EFF;
     width: 100%;
