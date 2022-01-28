@@ -7,7 +7,7 @@
 .header-block {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color:#2C2E3A;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -17,12 +17,13 @@
 #logo {
     padding-right: 300px;
     font-size: 70px;
+    color: #FF5EFF;
 }
 
 .header-link-block {
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    background-color: #FF5EFF;
     height: 100%;
     align-items: center;
 }
@@ -31,19 +32,19 @@
     text-decoration: none;
     height: 100%;
     width: 130px;
-    border: 1px solid black;
+    border: 1px solid #FF5EFF;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header-link-block a:hover {
-    background-color: white;
-    color: red;
-}
-
 .header-link-item {
     font-size: 40px;
+    color: #3E25CE;
+}
+
+.header-link-block a:hover {
+    background-color: white;
 }
 
 .main-block {
@@ -53,6 +54,8 @@
 
 #banner {
     width: 100%;
+    border-top: 5px #FF5EFF solid;
+    border-bottom: 5px #FF5EFF solid;
 }
 
 .title-block {
@@ -60,35 +63,86 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #2C2E3A;
 }
 
 .title-left {
     max-width: 400px;
-    margin-right: 15px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 50px;
+    color: cyan;
+    text-transform: uppercase;
+}
+
+#title-desc {
+    font-size: 25px;
+    padding-top: 10px;
+    color: #9836FF;
+}
+
+#button-join {
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: cyan;
+    color: #2C2E3A;
+    border: 1px solid #9836FF;
+    text-transform: uppercase;
 }
 
 #sombra {
-    width: 400px;
+    height: 300px;
+    border: 1px solid #FF5EFF;
 }
 
 .info-block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #2C2E3A;
+}
+
+#info-block-title {
+    color: #FF5EFF; 
+    padding-bottom: 15px;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 .info-abilities {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    
+    justify-content: space-around;
+    width: 75%;
 }
 
 .info-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid #3E25CE 3px;
+    width: 175px;
+    background-color: #9836FF;
+}
+
+.info-item p {
+    padding-top: 10px;
+    font-size: 25px;
+    color: #2C2E3A;
+    text-transform: uppercase;
 }
 
 .quote-block {
