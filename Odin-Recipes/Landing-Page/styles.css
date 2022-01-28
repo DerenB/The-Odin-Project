@@ -7,7 +7,6 @@
 .header-block {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color:#2C2E3A;
     justify-content: space-around;
     align-items: center;
@@ -236,8 +235,8 @@
 
 @media only screen and (max-width: 900px) {
     .header-block {
-        background-color: white;
         flex-direction: column;
+        height: 100px;
     }
     #logo {
         padding-right: 0;
@@ -271,4 +270,11 @@
     #button-bottom {
         margin-top: 10px;
     }
-  }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #sombra {
+        height: 250px;
+    }
+}
