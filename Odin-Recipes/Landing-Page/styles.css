@@ -46,7 +46,8 @@
 }
 
 .header-link-block a:hover {
-    background-color: white;
+    background-color: cyan;
+    border-color: cyan;
 }
 
 .main-block {
@@ -94,11 +95,19 @@
 #button-join {
     width: 150px;
     padding: 5px;
+    margin-top: 15px;
     font-size: 20px;
     background-color: cyan;
     color: #2C2E3A;
     border: 1px solid #9836FF;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+#button-join:hover {
+    background-color: #2C2E3A;
+    color: cyan;
+    border-color: #FF5EFF;
 }
 
 #sombra {
@@ -217,6 +226,13 @@
     background-color: #3E25CE;
     color: #FF5EFF;
     border: 1px solid black;
+    cursor: pointer;
+}
+
+#button-bottom:hover {
+    background-color: #2C2E3A;
+    color: cyan;
+    border-color: #FF5EFF;
 }
 
 .footer {
@@ -237,6 +253,9 @@
     .header-block {
         flex-direction: column;
         height: 100px;
+    }
+    .header-link-item {
+        padding-bottom: 10px;
     }
     #logo {
         padding-right: 0;
