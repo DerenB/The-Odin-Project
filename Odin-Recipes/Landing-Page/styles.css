@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.header-block {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+#logo {
+    padding-right: 300px;
+}
+
+.header-link-block {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: flex-end;
+}
+
+.header-link-item {
+    padding-left: 25px;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+}
+
+#banner {
+    width: 100%;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.title-left {
+    max-width: 400px;
+    margin-right: 15px;
+}
+
+#sombra {
+    width: 400px;
+}
