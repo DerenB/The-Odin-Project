@@ -80,6 +80,10 @@
     align-items: center;
 }
 
+.title-left a {
+    text-decoration: none;
+}
+
 #title {
     font-size: 50px;
     color: cyan;
@@ -185,7 +189,7 @@
     padding: 15px;
 }
 
-.quote-block figcaption {
+.quote-block div {
     color: cyan;
     font-size: 40px;
     padding-left: 60px;
@@ -222,6 +226,7 @@
     width: 150px;
     padding: 5px;
     font-size: 20px;
+    text-decoration: none;
     text-transform: uppercase;
     background-color: #3E25CE;
     color: #FF5EFF;
@@ -233,6 +238,15 @@
     background-color: #2C2E3A;
     color: cyan;
     border-color: #FF5EFF;
+}
+
+.signup-block div a {
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
