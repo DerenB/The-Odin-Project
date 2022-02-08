@@ -2,6 +2,9 @@ let output;
 let humanChoice;
 let computerChoice;
 
+let humanTotal = 0;
+let compTotal = 0;
+
 function computerPlay() {
     let choice = Math.round(Math.random() * (3 - 1) + 1);
     if(choice == 1) {
@@ -38,21 +41,32 @@ function winnerDecision(human,comp) {
         output = "It's a tie";
     } else if(human == 1 && comp == 3) {
         output = "Human Wins";
+        humanTotal++;
     } else if(human == 2 && comp == 1) {
         output = "Human Wins";
+        humanTotal++;
     } else if(human == 3 && comp == 2) {
         output = "Human Wins";
+        humanTotal++;
     } else {
         output = "Computer Wins";
+        compTotal++;
     }
 
     document.getElementById("humanResult").innerHTML = humanChoice;
     document.getElementById("computerResult").innerHTML = computerChoice;
     document.getElementById("result-output").innerHTML = output;
+
+    document.getElementById("humanScore").innerHTML = humanTotal;
+    document.getElementById("computerScore").innerHTML = compTotal;
 }
 
 function reset() {
     document.getElementById("humanResult").innerHTML = "";
     document.getElementById("computerResult").innerHTML = "";
     document.getElementById("result-output").innerHTML = "";
+    humanTotal = 0;
+    compTotal = 0;
+    document.getElementById("humanScore").innerHTML = humanTotal;
+    document.getElementById("computerScore").innerHTML = compTotal;
 }
