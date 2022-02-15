@@ -19,9 +19,15 @@
 }
 
 #title button {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
     text-transform: uppercase;
+    font-size: 20px;
+}
+
+#title form {
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 #main {
@@ -29,9 +35,10 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    max-width: 100%;
     background-color: red;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     border-top: 1px solid blue;
 }
 
@@ -42,8 +49,14 @@
 }
 
 .etch-item {
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
     border: 1px solid black;
     background-color: white;
+} 
+
+@media only screen and (max-width: 1250px) {
+    #main {
+        background-color: blue;
+    }
 }

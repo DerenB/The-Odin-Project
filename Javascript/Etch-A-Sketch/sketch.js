@@ -1,9 +1,9 @@
 
 // Runs the function on page load
-document.body.onload = addElement;
-
-
 const mainDiv = document.getElementById("main");
+document.body.onload = addElement(16,16);
+
+
 
 // Function to add the 16 x 16 grid
 function addElement(row, column) {
@@ -25,6 +25,12 @@ function addElement(row, column) {
             newDiv.appendChild(rowItem);
         }
     }
+
+    $(document).ready(function(){
+        $(".etch-item").hover(function(){
+            $(this).css("background-color", "black");
+        }); 
+    });
 }
 
 // Function to reset grid items to white
@@ -83,7 +89,7 @@ function gridDimensions() {
         columns = 1;
     }
 
-    
+
     addElement(rows,columns);
 }
 
