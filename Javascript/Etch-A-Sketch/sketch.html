@@ -7,31 +7,29 @@
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="sketch.css">
 
+    <!-- Adds JQuery files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-
-    </script>
 </head>
 <body>
     <div id="title">
         <h1>Etch-A-Sketch</h1>
         <div>
             <button onclick="gridDimensions()">New Grid</button>
-            <button onclick="reset()">Reset</button>
+            <button onclick="reset()" id="resetButton">Reset</button>
         </div>
         <form>
-            <label for="rows">Rows (1-100)):</label>
+            <label for="rows">Rows (1-100) :</label>
             <input type="number" id="rows" name="rows" min="1" max="100">
-            <label for="columns">Columns (1-100)):</label>
+            <label for="columns" id="columnForm">Columns (1-100) :</label>
             <input type="number" id="columns" name="columns" min="1" max="100">
         </form>
     </div>
 
+    <!-- Main Element for Grid -->
     <div id="main">
     </div>
     
     
     <script src="sketch.js"></script>
-    
 </body>
 </html>
