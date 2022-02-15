@@ -1,14 +1,16 @@
 
 // Runs the function on page load
 const mainDiv = document.getElementById("main");
+
+// Runs on page load
 document.body.onload = addElement(16,16);
-
-
 
 // Function to add the 16 x 16 grid
 function addElement(row, column) {
+    // Removes prior Grid before making new one
     removeAllChildNodes(mainDiv);
 
+    // Loop to add the rows
     for(let i = 0; i < row; i++) {
         // Creates the Div row
         let newDiv = document.createElement("div");
@@ -19,6 +21,7 @@ function addElement(row, column) {
         // Appends the new row to Main
         mainDiv.appendChild(newDiv);
 
+        // Loop to add the columns
         for(let i = 0; i < column; i++) {
             let rowItem = document.createElement("div");
             rowItem.className = "etch-item";
@@ -26,6 +29,7 @@ function addElement(row, column) {
         }
     }
 
+    // JQuery to add hover effect to the grid
     $(document).ready(function(){
         $(".etch-item").hover(function(){
             $(this).css("background-color", "black");
@@ -41,30 +45,8 @@ function reset() {
 	}
 }
 
-function alertPrompt() {
-    let rowDimensions = prompt("Enter Row Value: ", "16");
-    let columnDimensions = prompt("Enter Column Value: ", "16");
-    let addRow;
-    let addColumn;
-    if(rowDimensions == null || rowDimensions == "") {
-        addRow = 1;
-    } else {
-        addRow = rowDimensions;
-    }
-    if(columnDimensions == null || columnDimensions == "") {
-        addColumn = 1;
-    } else {
-        addColumn = columnDimensions;
-    }
-    addElement(addRow,addColumn);
-}
-
 // Gets the enter box values
 function gridDimensions() {
-    // Logs the input values
-    console.log(document.getElementById("rows").value);
-    console.log(document.getElementById("columns").value);
-
     // Determines the row value
     let rows = document.getElementById("rows").value;
     if (rows > 100) {
@@ -89,11 +71,11 @@ function gridDimensions() {
         columns = 1;
     }
 
-
+    // Calls the function to generate the new grid
     addElement(rows,columns);
 }
 
-// Removes child elements
+// Removes the prior grid
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
