@@ -31,3 +31,11 @@ function reset() {
 		elements[i].style.backgroundColor = "white";
 	}
 }
+
+
+// var hoverItems = document.getElementsByClassName('etch-item');
+// for (i in hoverItems) {
+//     hoverItems[i].addEventListener("mouseover", function() {
+//         hoverItems[i].style.backgroundColor = "pink";
+//     });
+// }
