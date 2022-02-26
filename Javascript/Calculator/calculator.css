@@ -17,7 +17,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #dcdde2;
-    color: #636250;
+    color: black;
 }
 
 #block {
@@ -48,6 +48,13 @@
     height: 100px;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#resultBar p {
+    font-size: 35px;
 }
 
 #body {
@@ -71,6 +78,8 @@
     justify-content: center;
     align-items: center;
     background-color: #528e86;
+    color: black;
+    font-size: 35px;
 }
 
 .bodyItemOneX {
