@@ -28,11 +28,12 @@
     background-color: #a19a90;
     width: 100%;
     height: 1100px;
+    padding-top: 30px;
 }
 
 #main {
     border: 5px solid black;
-    border-radius: 25px;
+    border-radius: 10px;
     width: 405px;
     height: 600px;
     display: flex;
@@ -45,7 +46,7 @@
     background-color: #528e86;
     width: 100%;
     height: 100px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     border-bottom: 2px solid black;
 }
 
@@ -55,7 +56,7 @@
     width: 100%;
     height: 500px;
     background-color: #528e86;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 10px 25px;
 }
 
 .bodyColumn {
@@ -85,28 +86,35 @@ div p {
 }
 
 #leftColumn {
-    border-radius: 0px 0px 0px 25px;
+    border-radius: 0px 0px 0px 10px;
 }
 
 #rightColumn {
-    border-radius: 0px 0px 25px 0px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+#minus {
+    height: 99px;
 }
 
 #pooKey {
-    border-radius: 0px 0px 0px 25px;
+    border-radius: 0px 0px 0px 5px;
 }
 
 #enterKey {
-    border-radius: 0px 0px 25px 0px;
+    border-radius: 0px 0px 5px 0px;
     
 }
 
-
-
-
 #colorPalette {
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 15px;
+    
+}
+
+#colorPalette p {
+    background-color: #a19a90;
+    font-size: 20px;
 }
 
 #imageDiv {
