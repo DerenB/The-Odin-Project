@@ -51,9 +51,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-#resultBar p {
     font-size: 35px;
 }
 
@@ -80,6 +77,11 @@
     background-color: #528e86;
     color: black;
     font-size: 35px;
+}
+
+.button:hover {
+    background-color: #636250;
+    cursor: pointer;
 }
 
 .bodyItemOneX {
